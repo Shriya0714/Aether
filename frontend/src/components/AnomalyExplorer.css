@@ -1,0 +1,150 @@
+
+.anomaly-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 22px 0;
+}
+
+.anomaly-metric {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  align-items: center;
+  gap: 5px 10px;
+  padding: 18px;
+}
+
+.anomaly-metric svg {
+  grid-row: span 2;
+  color: #69a8ff;
+}
+
+.anomaly-metric span {
+  color: #91a5c2;
+  font-size: 13px;
+}
+
+.anomaly-metric strong {
+  color: #edf4ff;
+  font-size: 24px;
+}
+
+.anomaly-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  margin-bottom: 18px;
+}
+
+.anomaly-search,
+.anomaly-toolbar select {
+  flex: 1;
+  min-width: 150px;
+  padding: 10px 12px;
+  border: 1px solid rgba(130, 155, 190, 0.2);
+  border-radius: 10px;
+  background: #0b1423;
+  color: #e7eefb;
+}
+
+.anomaly-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.anomaly-search input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: inherit;
+}
+
+.anomaly-search:focus-within,
+.anomaly-toolbar select:focus {
+  border-color: #69a8ff;
+  box-shadow: 0 0 0 3px rgba(105, 168, 255, 0.1);
+}
+
+.anomaly-table-panel {
+  min-width: 0;
+  padding: 20px;
+  margin-bottom: 18px;
+}
+
+.anomaly-table-panel .table-wrap {
+  overflow-x: auto;
+}
+
+.anomaly-table-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+.anomaly-table-panel th,
+.anomaly-table-panel td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(130, 155, 190, 0.12);
+  text-align: left;
+}
+
+.anomaly-table-panel th {
+  color: #91a5c2;
+  font-size: 11px;
+  letter-spacing: 0.07em;
+}
+
+.anomaly-empty {
+  padding: 24px 8px;
+  color: #91a5c2;
+}
+
+.anomaly-empty h3 {
+  color: #e7eefb;
+}
+
+.anomaly-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 10px;
+}
+
+.anomaly-detail-item {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid rgba(130, 155, 190, 0.14);
+  border-radius: 10px;
+}
+
+.anomaly-detail-item span,
+.anomaly-detail-item strong {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.anomaly-detail-item span {
+  margin-bottom: 6px;
+  color: #91a5c2;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.anomaly-detail-item strong {
+  color: #e7eefb;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .anomaly-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .anomaly-toolbar > * {
+    flex-basis: 100%;
+  }
+}

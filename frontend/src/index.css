@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #e8effb;
+  background: #080e19;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --text: #e8effb;
+  --muted: #91a4bf;
+  --blue: #6aa9ff;
+  --glass-border: rgba(180, 202, 243, 0.13);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 52% 0%, rgba(37, 78, 143, 0.19), transparent 42%),
+    radial-gradient(ellipse at 95% 65%, rgba(74, 49, 137, 0.10), transparent 35%),
+    linear-gradient(135deg, #080e19 0%, #0b1321 52%, #090e1a 100%);
+}
+
+body, button, input {
+  font-family: 'DM Sans', sans-serif;
+}
+
+button, input {
+  font-size: inherit;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #79b5ff;
+  outline-offset: 3px;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: white;
+  background: rgba(73, 132, 239, 0.5);
+}
+
+#root {
+  min-height: 100vh;
+}
